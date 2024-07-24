@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Cursive, serif;
     background-color: #001525;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     transform-origin: center;
-    animation: rotateOval 20s linear infinite;
+    animation: rotateOval 15s linear infinite;
     z-index: 1;
 }
 
@@ -41,17 +41,9 @@ body {
         width: 760px;
         height: 710px;
     }
-    25% {
-        width: 710px;
-        height: 670px;
-    }
     50% {
-        width: 710px;
-        height: 760px;
-    }
-    75% {
-        width: 710px;
-        height: 670px;
+        width: 680px;
+        height: 650px;
     }
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
