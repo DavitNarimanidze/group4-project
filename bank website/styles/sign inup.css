@@ -1,0 +1,170 @@
+/* =============================================== */
+/* Reset and global styles */
+/* =============================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cursive, serif;
+    background-color: rgb(37, 39, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+/* =============================================== */
+/* Rotating oval animation */
+/* =============================================== */
+.rotating-oval {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 777px;
+    height: 690px;
+    background: rgba(0, 255, 51, 0.044);
+    border: 2px solid rgba(0, 251, 54, 0.356);
+    border-radius: 50%;
+    transform-origin: center;
+    animation: rotateOval 15s linear infinite;
+}
+
+@keyframes rotateOval {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+        width: 760px;
+        height: 710px;
+    }
+    50% {
+        width: 680px;
+        height: 650px;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+        width: 760px;
+        height: 710px;
+    }
+}
+/* =============================================== */
+/* Form container styling */
+/* =============================================== */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container.modern-bank {
+    border-radius: 16px;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* =============================================== */
+/* Form styling */
+/* =============================================== */
+.form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form h2 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #bbb;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #555;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+}
+
+.input-group input:focus {
+    border-color: #0f0;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.1);
+}
+
+/* =============================================== */
+/* Button styling */
+/* =============================================== */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(
+        120deg,
+        hsl(192, 70%, 51%),
+        hsl(136, 65%, 51%)
+    );
+    color: white;
+    font-size: 1.125rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-image: linear-gradient(
+      120deg,
+      hsl(192, 89%, 52%),
+      hsl(136, 69%, 33%)
+    );
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 255, 0, 0.2);
+}
+
+/* =============================================== */
+/* Text and link styling */
+/* =============================================== */
+p {
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #bbb;
+}
+
+p a {
+    color: rgb(0, 255, 94);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #0a0;
+}

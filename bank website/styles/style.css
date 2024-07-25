@@ -18,7 +18,7 @@
     box-sizing: border-box;
   }
   body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
   }
   .nav-bar {
     display: flex;
@@ -27,12 +27,19 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .nav-items p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: hsl(233, 8%, 62%);
+    margin-right: 50px;
+  }
+
   .nav-items  a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
     color: hsl(233, 8%, 62%);
-    margin-left: 50px;
+    margin-right: 50px;
   }
   .nav-items a:hover{ 
     color: lightgreen;
@@ -59,7 +66,7 @@
       hsl(136, 69%, 33%)
     );
     transform: scale(1.1);
-    transition: 0.8s;
+    transition: 0.8s ease-in-out;
     
   }
   .hero-section {
@@ -118,7 +125,7 @@
       hsl(136, 69%, 33%)
     );
     transform: scale(1.1);
-    transition: 0.8s;
+    transition: 0.8s ease-in-out;
   }
 
 
@@ -178,7 +185,8 @@
   }
   .article-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+
     align-items: flex-start;
     width: 300px;
   }
